@@ -17,9 +17,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
 @Entity
 @Data
 @AllArgsConstructor
@@ -34,18 +31,42 @@ public class NhanVien implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "MaNV")
-	private String maNV;
+	@Column(name = "manv")
+	private String manv;
 	
-	@Column(name = "Ten")
+	@Column(name = "ten")
 	private String ten;
 	
-	@Column(name = "Luong")
+	@Column(name = "luong")
 	private Integer luong;
+
+	public String getManv() {
+		return manv;
+	}
+
+	public void setManv(String manv) {
+		this.manv = manv;
+	}
+
+	public String getTen() {
+		return ten;
+	}
+
+	public void setTen(String ten) {
+		this.ten = ten;
+	}
+
+	public Integer getLuong() {
+		return luong;
+	}
+
+	public void setLuong(Integer luong) {
+		this.luong = luong;
+	}
 
 	@Override
 	public String toString() {
-		return "NhanVien [maNV=" + maNV + ", ten=" + ten + ", luong=" + luong + "]";
+		return "NhanVien [manv=" + manv + ", ten=" + ten + ", luong=" + luong + "]";
 	}
-	
+
 }

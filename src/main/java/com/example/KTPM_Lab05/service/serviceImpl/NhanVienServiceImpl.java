@@ -3,11 +3,12 @@ package com.example.KTPM_Lab05.service.serviceImpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.KTPM_Lab05.model.NhanVien;	
 import com.example.KTPM_Lab05.respository.NhanVienRepository;
 import com.example.KTPM_Lab05.service.NhanVienService;
-
+@Service
 public class NhanVienServiceImpl implements NhanVienService{
 	@Autowired
 	private NhanVienRepository nhanVienRepo;

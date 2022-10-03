@@ -19,6 +19,32 @@ public class ChungNhanID implements Serializable{
 	@Column(name = "MaMB")
 	private Integer maMB;
 
+	
+	public String getMaNV() {
+		return maNV;
+	}
+
+
+	public void setMaNV(String maNV) {
+		this.maNV = maNV;
+	}
+
+
+	public Integer getMaMB() {
+		return maMB;
+	}
+
+
+	public void setMaMB(Integer maMB) {
+		this.maMB = maMB;
+	}
+
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+
 	@Override
 	public String toString() {
 		return "ChungNhanID [maNV=" + maNV + ", maMB=" + maMB + "]";

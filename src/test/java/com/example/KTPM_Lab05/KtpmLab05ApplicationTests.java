@@ -26,25 +26,25 @@ class KtpmLab05ApplicationTests {
         chuyenBayService.findCBDiDAD().forEach(System.out::println);
     }
 
-//    @Test
-//    void mayBayTamBayHon10000(){
-//        mayBayService.findMBTamBayHon10000().forEach(System.out::println);
-//    }
-//
-//    @Test
-//    void nhanVienLuongNhoHon10000(){
-//        nhanVienService.findNVLuongNhoHon10000().forEach(System.out::println);
-//    }
-//
-//    @Test
-//    void getNhanVienById(){
-//        NhanVien nv = nhanVienService.findNhanVienByMaNV("011564812");
-//        System.out.println(nv);
-//    }
-//
-//    @Test
-//    void updateNhanVienById(){
-//        nhanVienService.updateLuongNv("011564812", 153974);
-//    }
+    @Test
+    void mayBayTamBayHon10000(){
+        mayBayService.findMBTamBayHon10000().forEach(System.out::println);
+    }
+
+    @Test
+    void nhanVienLuongNhoHon10000(){
+        nhanVienService.findNVLuongNhoHon10000().forEach(System.out::println);
+    }
+
+    @Test
+    void getNhanVienById(){
+        NhanVien nv = nhanVienService.findNhanVienByMaNV("011564812");
+        System.out.println(nv);
+    }
+
+    @Test
+    void updateNhanVienById(){
+        nhanVienService.updateLuongNv("011564812", 153974);
+    }
 
 }

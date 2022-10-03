@@ -18,9 +18,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
 @Entity
 @Data
 @AllArgsConstructor
@@ -35,31 +32,90 @@ public class ChuyenBay implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "MaCB")
-	private String maCB;
+	@Column(name = "macb")
+	private String macb;
 	
-	@Column(name = "GaDi")
-	private String gaDi;
+	@Column(name = "gadi")
+	private String gadi;
 	
-	@Column(name = "GaDen")
-	private String gaDen;
+	@Column(name = "gaden")
+	private String gaden;
 	
-	@Column(name = "DoDai")
-	private Integer doDai;
+	@Column(name = "dodai")
+	private Integer dodai;
 	
-	@Column(name = "GioDi")
-	private Date gioDi;
+	@Column(name = "giodi")
+	private Date giodi;
 	
-	@Column(name = "GioDen")
-	private Date gioDen;
+	@Column(name = "gioden")
+	private Date gioden;
 	
-	@Column(name = "ChiPhi")
-	private Integer chiPhi;
+	@Column(name = "chiphi")
+	private Integer chiphi;
+
+	public String getMacb() {
+		return macb;
+	}
+
+	public void setMacb(String macb) {
+		this.macb = macb;
+	}
+
+	public String getGadi() {
+		return gadi;
+	}
+
+	public void setGadi(String gadi) {
+		this.gadi = gadi;
+	}
+
+	public String getGaden() {
+		return gaden;
+	}
+
+	public void setGaden(String gaden) {
+		this.gaden = gaden;
+	}
+
+	public Integer getDodai() {
+		return dodai;
+	}
+
+	public void setDodai(Integer dodai) {
+		this.dodai = dodai;
+	}
+
+	public Date getGiodi() {
+		return giodi;
+	}
+
+	public void setGiodi(Date giodi) {
+		this.giodi = giodi;
+	}
+
+	public Date getGioden() {
+		return gioden;
+	}
+
+	public void setGioden(Date gioden) {
+		this.gioden = gioden;
+	}
+
+	public Integer getChiPhi() {
+		return chiphi;
+	}
+
+	public void setChiPhi(Integer chiphi) {
+		this.chiphi = chiphi;
+	}
 
 	@Override
 	public String toString() {
-		return "ChuyenBay [maCB=" + maCB + ", gaDi=" + gaDi + ", gaDen=" + gaDen + ", doDai=" + doDai + ", gioDi="
-				+ gioDi + ", gioDen=" + gioDen + ", chiPhi=" + chiPhi + "]";
+		return "ChuyenBay [macb=" + macb + ", gadi=" + gadi + ", gaden=" + gaden + ", dodai=" + dodai + ", giodi="
+				+ giodi + ", gioden=" + gioden + ", chiPhi=" + chiphi + "]";
 	}
+	
+	
+	
 	
 }

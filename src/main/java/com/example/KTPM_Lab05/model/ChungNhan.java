@@ -15,9 +15,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-@Getter
-@Setter
-@ToString
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -39,6 +37,27 @@ public class ChungNhan implements Serializable{
 	@ManyToOne(optional = false)
 	@JoinColumn(name = "MaMB", referencedColumnName = "MaMB", insertable = false, updatable = false)
 	private MayBay mayBay;
+
+	
+	public NhanVien getNhanVien() {
+		return nhanVien;
+	}
+
+
+	public void setNhanVien(NhanVien nhanVien) {
+		this.nhanVien = nhanVien;
+	}
+
+
+	public MayBay getMayBay() {
+		return mayBay;
+	}
+
+
+	public void setMayBay(MayBay mayBay) {
+		this.mayBay = mayBay;
+	}
+
 
 	@Override
 	public String toString() {
